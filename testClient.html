@@ -1,5 +1,5 @@
 <html>
-<header>
+<head>
 	<title> Test NodeJS </title>
 	<!--
 	/*                                                   */
@@ -7,16 +7,18 @@
 	/*                                                   */
 	/*                Suport : armand.gutierrez@fje.edu  */
 	-->
-</header>
+	<script type="text/javascript" src="js/funcion.js"></script>
+</head>
 <body>
+<img src="img/cobi.JPG" width="20%" title="cobi"/>
 <!-- Formulari de proves per provar NodeJs -->
-<form method="get" action="http://192.168.1.11:8080" >
+<form method="get" action="http://192.168.1.25:8080" >
 		<p>
     	Nom : <input type="text" name="nom" />
-			<select name="op">    
+		 <select name="op" onchange="mensaje(this.value)">
 		     <option value="accioA" selected="selected">Accio A</option>
-		     <option value="accioB">Accio B</option>     
-		 </select>    
+		     <option value="accioB">Accio B</option>
+		 </select>
 		</p>
  		<p>
 			Text :	<textarea rows="5" cols="30" name="notes"></textarea>
@@ -27,5 +29,3 @@
 <!-- proves alternatives : curl localhost:8080-->
 </body>
 </html>
-
-
